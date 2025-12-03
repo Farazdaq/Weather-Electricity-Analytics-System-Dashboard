@@ -1,0 +1,2 @@
+│  ├─ layouts/              # Layout components (header, footer, dashboard layout)
+│  │   └─ MainLayout.jsx

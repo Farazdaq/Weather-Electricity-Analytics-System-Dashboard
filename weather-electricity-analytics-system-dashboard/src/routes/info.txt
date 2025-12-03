@@ -1,0 +1,2 @@
+│  ├─ routes/               # React Router configuration
+│  │   └─ AppRoutes.jsx

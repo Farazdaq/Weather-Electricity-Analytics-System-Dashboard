@@ -1,0 +1,4 @@
+│  ├─ pages/                # Top-level pages / routes
+│  │   ├─ Home.jsx
+│  │   ├─ Login.jsx
+│  │   └─ Dashboard.jsx

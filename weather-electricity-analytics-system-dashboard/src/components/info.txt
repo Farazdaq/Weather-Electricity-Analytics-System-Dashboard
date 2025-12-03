@@ -1,0 +1,5 @@
+components/           # Reusable components (buttons, modals, inputs)
+│  │   └─ Button/
+│  │       ├─ Button.jsx
+│  │       ├─ Button.test.jsx
+│  │       └─ Button.module.css

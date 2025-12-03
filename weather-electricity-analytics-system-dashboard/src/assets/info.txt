@@ -1,0 +1,3 @@
+Images, fonts, icons, styles, etc.
+│  │   ├─ images/
+│  │   └─ styles/

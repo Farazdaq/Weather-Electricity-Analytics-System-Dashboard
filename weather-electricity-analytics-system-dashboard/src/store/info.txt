@@ -1,0 +1,2 @@
+│  ├─ store/                # Redux / Zustand / Jotai state management
+│  │   └─ store.js

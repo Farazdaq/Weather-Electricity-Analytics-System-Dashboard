@@ -1,0 +1,5 @@
+features/             # Domain-specific feature slices (if using Redux/RTK)
+│  │   └─ auth/
+│  │       ├─ components/   # Components specific to auth
+│  │       ├─ authSlice.js
+│  │       └─ authAPI.js
