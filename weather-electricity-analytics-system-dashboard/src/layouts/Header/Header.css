@@ -1,5 +1,8 @@
 .header {
+  align-items: center;
   width: 198.5vh;
   height: 55px;
-  opacity: 0.2;
+  opacity: 0.1;
+  justify-content: center;
+  display: flex;
 }

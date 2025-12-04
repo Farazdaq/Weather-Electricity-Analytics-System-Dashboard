@@ -1,8 +1,12 @@
 import Header from "../Header/Header";
+import theme from "../../assets/styles/theme";
 import "./MainLayout.css";
 function MainLayout() {
   return (
-    <div className="layout-container" style={{ display: "flex" }}>
+    <div
+      className="layout-container"
+      style={{ display: "flex", backgroundColor: theme.colors.layout }}
+    >
       {/* Header */}
       <Header />
 

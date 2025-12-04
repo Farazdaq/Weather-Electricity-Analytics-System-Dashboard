@@ -1,14 +1,18 @@
 import theme from "../../assets/styles/theme";
 import "./Header.css";
+import Search from "../../components/Search/Search";
+
 function Header() {
   return (
     <header
       className="header"
       style={{
-        backgroundColor: theme.colors.primary,
+        backgroundColor: theme.colors.primaryTransparent,
       }}
     >
-      Header
+      <div>
+        <Search />
+      </div>
     </header>
   );
 }
