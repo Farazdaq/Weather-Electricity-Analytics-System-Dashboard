@@ -1,0 +1,26 @@
+/* Container for optional positioning, spacing, or hover effects */
+.profile-container {
+  display: inline-block; /* Inline-block keeps it aligned nicely */
+  padding: 5px; /* Space between border and surrounding elements */
+  border: 2px solid #93e7fb; /* Black border */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Ensure image stays within border */
+  box-sizing: border-box; /* Includes padding & border in size */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The image itself */
+.profile-image {
+  width: 40;
+  height: 40;
+  display: block; /* Removes small inline spacing */
+
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop if necessary, no distortion */
+}
+
+/* Optional hover effect */
+.profile-container:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 0 10px #93e7fb; /* Soft shadow */
+}

@@ -10,3 +10,9 @@
   background-color: #93e7fb;
   box-shadow: 0 2px 4px rgba(143, 206, 251, 0.6);
 }
+
+.column-container {
+  display: flex; /* Enables Flexbox */
+  flex-direction: row; /* Arranges children vertically */
+  gap: 1px; /* Optional: space between children */
+}

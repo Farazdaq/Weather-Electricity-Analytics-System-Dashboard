@@ -39,7 +39,7 @@
   background-color: transparent; /* Keep background consistent */
 }
 
-.column-container {
+.header-column-container {
   display: flex; /* Enables Flexbox */
   flex-direction: row; /* Arranges children vertically */
   gap: 1px; /* Optional: space between children */
