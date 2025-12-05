@@ -1,8 +1,12 @@
 .header {
-  align-items: center;
-  width: 198.5vh;
-  height: 55px;
-  opacity: 0.1;
-  justify-content: center;
+  width: 100%; /* full width on all screens */
+  height: clamp(45px, 3vw, 45px); /* responsive height */
+
   display: flex;
+  align-items: center; /* vertical centering */
+  justify-content: center; /* responsive horizontal spacing */
+
+  padding: 0 1rem; /* add breathing room */
+  background-color: #93e7fb;
+  box-shadow: 0 2px 4px rgba(143, 206, 251, 0.6);
 }

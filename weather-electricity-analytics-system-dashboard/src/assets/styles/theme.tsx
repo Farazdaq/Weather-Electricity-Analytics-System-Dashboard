@@ -2,8 +2,8 @@
 const theme = {
   colors: {
     primary: "#93E7FB", // main brand color
-    primaryTransparent: "rgba(0, 204, 255, 1)",
-    inputPrimaryTransparent: "rgba(118, 212, 249, 0.9)",
+    primaryTransparent: "rgba(0, 204, 255, 0.2)",
+    inputPrimaryTransparent: "rgba(118, 212, 249, 0.3)",
     secondary: "#9333EA", // secondary accent
     success: "#10B981",
     danger: "#EF4444",

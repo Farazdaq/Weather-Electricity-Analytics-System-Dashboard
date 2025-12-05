@@ -1,34 +1,78 @@
-/* Whole screen container */
+/* =============================
+   RESET / GLOBAL STYLES
+============================= */
+
+#root {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* =============================
+   MAIN LAYOUT CONTAINER
+   (Full width + full height)
+============================= */
 .layout-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-/* Body container under header */
-.layout-body {
-  display: flex;
-  flex: 1;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  max-width: 100vw; /* Prevent overflow horizontally */
   overflow: hidden;
 }
 
-/* Content area next to sidebar */
+/* =============================
+   HEADER
+============================= */
+
+/* =============================
+   BODY (Sidebar + Content)
+============================= */
+.layout-body {
+  display: flex;
+  flex: 1; /* Takes all remaining height */
+  width: 100%;
+  min-height: 0; /* important for proper flex scrolling */
+  overflow: hidden;
+}
+
+/* =============================
+   SIDEBAR (Desktop)
+============================= */
+.sidebar {
+  width: clamp(180px, 18vw, 280px); /* Responsive width */
+  height: 100%; /* Match layout-body height */
+  background: #ffffff;
+  border-right: 1px solid #e3e3e3;
+  overflow-y: auto;
+  flex-shrink: 0; /* prevent shrinking */
+  transition: transform 0.3s ease;
+}
+
+/* =============================
+   CONTENT AREA (Fills remaining)
+============================= */
 .content-area {
   flex: 1;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  padding: clamp(10px, 2vw, 24px);
   overflow-y: auto;
   background: #f5f5f5;
 }
 
-/* Mobile Sidebar */
+/* =============================
+   MOBILE SIDEBAR (Slide-in)
+============================= */
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
-    top: 60px; /* Under header */
+    top: 60px; /* Below header */
     left: 0;
-    bottom: 0;
-    transform: translateX(-100%);
+    height: calc(100vh - 60px);
     width: 220px;
+    transform: translateX(-100%);
     z-index: 999;
   }
 
@@ -37,12 +81,15 @@
   }
 }
 
-/* Mobile menu button */
+/* =============================
+   MOBILE MENU BUTTON
+============================= */
 .menu-btn {
-  font-size: 24px;
+  font-size: 26px;
   background: none;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
