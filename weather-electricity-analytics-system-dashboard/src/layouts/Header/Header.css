@@ -14,5 +14,12 @@
 .column-container {
   display: flex; /* Enables Flexbox */
   flex-direction: row; /* Arranges children vertically */
+  align-items: center; /* vertical centering */
   gap: 1px; /* Optional: space between children */
+}
+.right-elements {
+  align-items: center;
+
+  display: flex;
+  flex-direction: row; /* Arranges children vertically */
 }

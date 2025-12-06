@@ -5,7 +5,7 @@ function Profile() {
   return (
     <div className="profile-container">
       <img
-        src="https://via.placeholder.com/150"
+        src="https://picsum.photos/200/300"
         alt="Profile Image"
         className="profile-image"
       />
