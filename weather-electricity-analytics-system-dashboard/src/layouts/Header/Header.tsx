@@ -3,7 +3,7 @@ import "./Header.css";
 import Search from "../../components/Search/Search";
 import Profile from "../../components/Profile/Profile";
 import ResponsiveSpacer from "../../core/ResponsiveSpacer";
-
+import Username from "../../components/Username/Username";
 function Header() {
   return (
     <header
@@ -16,12 +16,14 @@ function Header() {
         <div className="right-elements">
           <Search />
         </div>
+        <ResponsiveSpacer width={400} min={20} max={500} />
+
         <div className="right-elements">
-          <div>
-            <p> Farazdaq Ahmed </p>
-          </div>
-          <ResponsiveSpacer width={30} />
+          <Username text="Farazdaq Ahmed" color="#93E7FB" size={14} />
+
+          <ResponsiveSpacer width={100} min={20} max={500} />
           <Profile />
+          <ResponsiveSpacer width={40} min={20} max={500} />
         </div>
       </div>
     </header>

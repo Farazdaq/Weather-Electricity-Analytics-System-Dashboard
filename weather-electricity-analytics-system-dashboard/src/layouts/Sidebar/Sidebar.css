@@ -1,0 +1,36 @@
+/* Sidebar */
+.sidebar {
+  width: clamp(
+    70px,
+    15vw,
+    80px
+  ); /* responsive width: min 200px, max 300px, scales with viewport */
+  height: 100vh; /* full viewport height, ignores header */
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem; /* add breathing room */
+
+  box-shadow: 0 4px 8px rgba(143, 206, 251, 0.6);
+
+  position: fixed; /* stays fixed to viewport */
+  top: 0; /* starts from very top */
+  left: 0;
+  z-index: 101; /* higher than header if needed */
+
+  overflow-y: auto; /* scroll if content exceeds viewport height */
+}
+
+/* Optional: content inside sidebar scrolls independently */
+.sidebar-content {
+  flex: 1; /* takes remaining height */
+  overflow-y: auto;
+}
+
+/* Make sidebar responsive on small screens if needed */
+@media (max-width: 500px) {
+  .sidebar {
+    width: 180px; /* smaller minimum width on very small screens */
+  }
+}

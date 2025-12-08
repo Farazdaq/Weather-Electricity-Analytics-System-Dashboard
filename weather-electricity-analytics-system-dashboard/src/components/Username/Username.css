@@ -1,0 +1,23 @@
+.username-container {
+  display: flex;
+  flex-direction: row; /* horizontal layout */
+  align-items: center;
+  cursor: pointer;
+  gap: 10px; /* fixed horizontal spacing */
+}
+
+.username-text {
+  margin: 0;
+  color: var(--username-color);
+  font-size: var(--username-size);
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: underline; /* <-- underline added */
+}
+
+.username-icon {
+  color: var(--username-color);
+  font-size: calc(var(--username-size) * 1.5);
+  margin-top: 2%;
+  transition: transform 0.2s ease;
+}

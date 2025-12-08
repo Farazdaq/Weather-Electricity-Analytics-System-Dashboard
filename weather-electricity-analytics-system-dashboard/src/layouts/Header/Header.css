@@ -1,11 +1,9 @@
 .header {
   width: 100%; /* full width on all screens */
   height: clamp(45px, 3vw, 45px); /* responsive height */
-
   display: flex;
-  align-items: center; /* vertical centering */
-  justify-content: center; /* responsive horizontal spacing */
-
+  align-items: right; /* vertical centering */
+  justify-content: right; /* responsive horizontal spacing */
   padding: 0 1rem; /* add breathing room */
   background-color: #93e7fb;
   box-shadow: 0 2px 4px rgba(143, 206, 251, 0.6);
@@ -17,9 +15,9 @@
   align-items: center; /* vertical centering */
   gap: 1px; /* Optional: space between children */
 }
+
 .right-elements {
   align-items: center;
-
   display: flex;
   flex-direction: row; /* Arranges children vertically */
 }
